@@ -1,0 +1,5 @@
+while err > tol
+    xold = x;
+    x = S\(((1-omega)*D + omega*U)*x) + omega*(S\b);
+    err = norm(xold-x);
+end
